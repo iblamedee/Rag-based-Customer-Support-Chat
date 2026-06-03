@@ -20,10 +20,7 @@ chunk_overlap = 200
 
 chunks = text_splitter.split_documents(documents=doc)
 
-# emdedding_model = GoogleGenerativeAIEmbeddings(
-#     model = "embedding-001",
-#     api_key = "AIzaSyBZFHqkzIBlIj0hbQ5D8Afx1-XYK18PiEQ"
-# )
+
 
 embedding_model = OpenAIEmbeddings(
     model="text-embedding-3-small",
